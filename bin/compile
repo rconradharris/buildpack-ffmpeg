@@ -18,4 +18,4 @@ curl -L --silent $DOWNLOAD_URL | tar -Jx
 echo "exporting PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/ffmpeg.sh"
 mkdir -p $(dirname $PROFILE_PATH)
-echo 'export PATH="$PATH:vendor/ffmpeg-3.4.2-64bit-static"' >> $PROFILE_PATH
+echo 'export PATH="$PATH:/app/vendor/ffmpeg-3.4.2-64bit-static"' >> $PROFILE_PATH
