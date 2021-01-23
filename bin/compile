@@ -15,7 +15,10 @@ die() {
 echo "-----> Install ffmpeg"
 BUILD_DIR=$1
 VENDOR_DIR="vendor"
-DOWNLOAD_URL="https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz"
+#DOWNLOAD_URL="https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz"
+#FIXME: Trying to rollback to see if this fixes ffmpeg hanging in Heroku (4.3.1 seems to hang now)
+DOWNLOAD_URL="https://www.johnvansickle.com/ffmpeg/old-releases/ffmpeg-4.2.2-amd64-static.tar.xz"
+
 
 echo "DOWNLOAD_URL = " $DOWNLOAD_URL | indent
 
